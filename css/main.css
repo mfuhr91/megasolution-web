@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "titilium";
+  src: url("fonts/titilium.ttf");
+  font-display: auto;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10+ and Edge */
+  user-select: none;
+  /* Standard syntax */
+}
+
+h2 {
+  font-size: 40px;
+  color: #e07827;
+}
+
+body {
+  font-family: "titilium";
+  background-color: #eee;
+  overflow-x: hidden;
+}
+
+#contenido {
+  display: block;
+  text-align: center;
+  width: 85%;
+  margin: 0px auto;
+}
+#contenido h1 {
+  font-size: 55px;
+  margin: 20px;
+  margin-top: 100px;
+}
+#contenido #soporte {
+  font-size: 35px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 20px #ccc, 0px 20px 20px #ccc;
+  background-color: white;
+  margin-top: 30px;
+  padding: 30px;
+}
+#contenido #soporte h2 {
+  margin: 30px;
+}
+#contenido #carrusel {
+  background-color: white;
+  box-shadow: 0px 20px 20px #ccc;
+  margin: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+#contenido #carrusel .bx-wrapper {
+  padding-top: 30px;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+#contenido #carrusel .bx-wrapper .bx-viewport,
+#contenido #carrusel .bx-wrapper .bx-pager,
+#contenido #carrusel .bx-wrapper .bx-controls {
+  margin: 0px !important;
+}
+#contenido #carrusel div:first-child img {
+  margin-left: 30px;
+}
+#contenido #feed-ig {
+  background-color: white;
+  box-shadow: 0px 20px 20px #ccc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#contenido #feed-ig a {
+  text-decoration: none;
+}
+#contenido #feed-ig a h2 {
+  margin: 20px;
+}
+#contenido #feed-ig .instagram_gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#contenido #feed-ig .instagram_gallery img {
+  border-radius: 20px;
+  max-width: 90%;
+  margin: 10px;
+}
+#contenido #videos {
+  box-shadow: 0px 20px 20px #ccc;
+  background-color: white;
+  padding-top: 60px;
+  height: 450px;
+  padding-left: 2%;
+}
+#contenido #videos video {
+  border-radius: 4px;
+  display: block;
+  float: left;
+  width: 45%;
+  height: 80%;
+  margin-top: 30px;
+  margin-left: 2.7%;
+}
+#contenido #conectividad,
+#contenido #sonido,
+#contenido #almacenamiento {
+  box-shadow: 0px 20px 20px #ccc;
+  background-color: white;
+  margin: 30px;
+  padding-bottom: 50px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+#contenido #conectividad #titulo,
+#contenido #sonido #titulo,
+#contenido #almacenamiento #titulo {
+  display: block;
+  align-self: center;
+  width: 45%;
+}
+#contenido #conectividad #titulo p,
+#contenido #sonido #titulo p,
+#contenido #almacenamiento #titulo p {
+  font-size: 30px;
+}
+#contenido #conectividad .bx-wrapper,
+#contenido #sonido .bx-wrapper,
+#contenido #almacenamiento .bx-wrapper {
+  padding-top: 30px;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  width: 55%;
+}
+#contenido #conectividad .bx-wrapper div,
+#contenido #sonido .bx-wrapper div,
+#contenido #almacenamiento .bx-wrapper div {
+  max-height: 500px;
+}
+#contenido #conectividad .bx-wrapper div img,
+#contenido #sonido .bx-wrapper div img,
+#contenido #almacenamiento .bx-wrapper div img {
+  max-height: inherit;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+#contenido #conectividad {
+  display: flex;
+  flex-direction: row;
+}
+#contenido #sonido {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 30px;
+}
+#contenido #almacenamiento {
+  display: flex;
+  flex-direction: row;
+}
+#contenido #quienes-somos {
+  border-radius: 0px 0px 20px 20px;
+  font-size: 35px;
+  box-shadow: 0px 20px 20px #ccc;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+#contenido #quienes-somos h2 {
+  margin: 30px;
+}
+
+@keyframes ampliar {
+  0% {
+    height: 400px;
+  }
+  100% {
+    height: 600px;
+  }
+}
+@media (max-width: 1720px) {
+  #contenido #carrusel .bx-viewport {
+    padding-left: 30px;
+  }
+  #contenido h1 {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 1560px) {
+  #contenido #carrusel .bx-wrapper div {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #contenido #carrusel div:first-child img {
+    margin-left: 30px;
+  }
+  #contenido #videos {
+    padding-left: 1.5%;
+  }
+  #contenido #conectividad #titulo,
+#contenido #almacenamiento #titulo {
+    margin-left: 40px;
+  }
+  #contenido #sonido #titulo {
+    margin-right: 40px;
+  }
+  #contenido #quienes-somos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  #contenido h1 {
+    margin-top: 100px;
+  }
+  #contenido #carrusel div:first-child img {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  #contenido #carrusel .bx-viewport {
+    padding-left: 10px;
+  }
+  #contenido #carrusel div:first-child img {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1150px) {
+  #contenido #carrusel .bx-wrapper .bx-viewport {
+    padding-left: 70px;
+  }
+  #contenido #carrusel div:first-child img {
+    margin-left: 2%;
+  }
+  #contenido #feed-ig .instagram_gallery {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  #contenido #feed-ig .instagram_gallery img {
+    border-radius: 10px;
+  }
+}
+@media (max-width: 1060px) {
+  #contenido {
+    margin-top: 150px !important;
+  }
+  #contenido h1 {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 950px) {
+  #contenido #carrusel .bx-wrapper .bx-viewport {
+    padding-left: 0% !important;
+  }
+  #contenido #carrusel .bx-wrapper .bx-viewport div {
+    margin: 0px auto;
+  }
+  #contenido #carrusel .bx-wrapper .bx-viewport div img {
+    margin: 0px auto !important;
+  }
+}
+@media (max-width: 700px) {
+  h2 {
+    font-size: 35px;
+    margin: 5px;
+  }
+
+  #contenido {
+    margin-top: 110px !important;
+  }
+  #contenido h1 {
+    font-size: 45px;
+  }
+  #contenido #soporte {
+    font-size: 25px;
+    padding: 20px;
+  }
+  #contenido #feed-ig a h2 {
+    font-size: 25px;
+  }
+  #contenido #feed-ig .instagram_gallery {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  #contenido #feed-ig .instagram_gallery img {
+    border-radius: 10px;
+  }
+  #contenido #videos video {
+    display: block;
+    float: none;
+    width: 92%;
+  }
+  #contenido #conectividad,
+#contenido #sonido,
+#contenido #almacenamiento {
+    display: block;
+    padding-bottom: 50px;
+    margin: 0px auto;
+  }
+  #contenido #conectividad #titulo,
+#contenido #sonido #titulo,
+#contenido #almacenamiento #titulo {
+    display: block;
+    align-self: center;
+    width: 90%;
+    margin-left: 0px;
+    margin: 20px;
+  }
+  #contenido #conectividad #titulo p,
+#contenido #sonido #titulo p,
+#contenido #almacenamiento #titulo p {
+    font-size: 30px;
+  }
+  #contenido #conectividad .bx-wrapper,
+#contenido #sonido .bx-wrapper,
+#contenido #almacenamiento .bx-wrapper {
+    padding-top: 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  #contenido #conectividad .bx-wrapper div,
+#contenido #sonido .bx-wrapper div,
+#contenido #almacenamiento .bx-wrapper div {
+    max-height: 250px;
+  }
+  #contenido #conectividad .bx-wrapper div img,
+#contenido #sonido .bx-wrapper div img,
+#contenido #almacenamiento .bx-wrapper div img {
+    max-height: inherit;
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+  #contenido #quienes-somos {
+    font-size: 25px;
+    box-shadow: 0px 20px 20px #ccc;
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 30px;
+  }
+  #contenido #quienes-somos h2 {
+    margin: 10px;
+  }
+}
+@media (max-width: 530px) {
+  #contenido {
+    margin-top: 25px !important;
+  }
+}
+@media (max-width: 380px) {
+  #contenido {
+    margin-top: 55px !important;
+  }
+  #contenido h1 {
+    font-size: 35px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

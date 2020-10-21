@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <style>
+        font-face {
+            font-family: "yanone";
+            src: url("fonts/yanone.ttf");
+        }
+
+        @font-face {
+            font-family: "finger";
+            src: url("fonts/finger.ttf");
+        }
+
+        @font-face {
+            font-family: "titilium";
+            src: url("css/fonts/titilium.ttf");
+        }
+
+        .clearfix {
+            float: none;
+            clear: both;
+        }
+
+        .fixed {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: "titilium";
+            background-color: #eee;
+            overflow-x: hidden;
+        }
+
+        #error {
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+            margin-top: 200px;
+            width: 60%;
+            background-color: #ccc;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        #error h1 {
+            font-size: 55px;
+        }
+
+        #error p {
+            font-size: 35px;
+            width: 100%;
+            line-height: 60px;
+        }
+
+        #error p a {
+            margin-left: 10px;
+            display: inline-block;
+            height: 60px;
+            border-radius: 10px;
+            line-height: 60px;
+            cursor: pointer;
+            text-decoration: none;
+            list-style: none;
+            width: 30%;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #e64b6d;
+        }
+
+        #error p a:hover {
+            transition: all 400ms;
+            transform: scale(1.1);
+        }
+        @media (max-width: 1112px) {
+            #error p a {
+            margin-left: 0px;
+            width: 60%;
+            padding-left: 0px;
+            padding-right: 0px;
+            }
+        }
+        @media (max-width: 700px) {
+            #error{
+                padding: 20px;
+                width: 80%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #error h1{
+                font-size: 40px;
+            }
+            #error p{
+                font-size: 25px;
+            }
+            #error p a {
+            margin-left: 0px;
+            width: 55%;
+            padding-left: 0px;
+            padding-right: 0px;
+            }
+        }
+    </style>
+    <title>Error al cargar la página</title>
+</head>
+
+<body>
+    <div id="error">
+        <h1>Disculpe las molestias</h1>
+        <p>En estos momentos estamos teniendo problemas con nuestra web, por favor mientras los resolvemos
+            puede ingresar a ver nuestros producos a la <br><a id="tienda"
+                href="https://www.tdfexpress.com/tienda/megasolution_141" rel="external" target="_blank">Tienda
+                Online</a>
+        </p>
+    </div>
+</body>
+
+</html>

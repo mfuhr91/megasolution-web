@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://megasolution.com.ar/sitemap.xml
