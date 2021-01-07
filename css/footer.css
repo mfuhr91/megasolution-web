@@ -105,7 +105,7 @@ footer #autor p a {
 }
 @media (max-width: 1210px) {
   footer #footer {
-    height: 550px;
+    height: 700px;
     flex-direction: column;
     padding-left: 0px;
   }
@@ -114,15 +114,6 @@ footer #autor p a {
   }
   footer #footer #mapa iframe {
     width: 95%;
-  }
-  footer #footer #contacto {
-    width: 100%;
-    padding-left: 100px;
-  }
-}
-@media (max-width: 1180px) {
-  footer #footer {
-    height: 700px;
   }
   footer #footer #contacto {
     width: 85%;

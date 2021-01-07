@@ -111,7 +111,6 @@ function posicionarMenu() {
         }
         
     }
-    console.log(screen.width);
 }
 
    

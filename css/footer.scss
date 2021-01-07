@@ -129,7 +129,8 @@ footer{
 @media(max-width: 1210px){
     footer{
         #footer{
-            height: 550px;
+            height: 700px;
+            
             flex-direction: column;
             #mapa{
                 width: 100%;
@@ -139,22 +140,12 @@ footer{
             }
             padding-left: 0px;
             #contacto{
-                width: 100%;
-                padding-left: 100px;
-            }
-        }
-    }    
-}
-@media(max-width: 1180px){
-    footer{
-        #footer{
-            height: 700px;
-            #contacto{
                 width: 85%;
 
                 margin: 0px auto;
                 padding: 0px;
                 margin-left: 30%;
+                
             }
         }
     }    
