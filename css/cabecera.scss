@@ -20,10 +20,8 @@
         font-weight: bold;
         z-index: 1;
         #principal{
-            display: block;
             float: left;
-            
-            margin-left: 35%;
+            margin-left: 1%;
             li{
                 display: inline-block;
                 a{
@@ -44,14 +42,11 @@
                     transform: scale(1.1);
                 }  
             }
-
-            li:last-child a:hover{
-                background-color: #e64b6d;
-            }
         }
         #social{
             text-align: center;
             float: right;
+            margin-right: 1%;
             li{
                 width: 60px;
                 display: inline-block;
@@ -75,12 +70,6 @@
                     transition: all 400ms;
                     transform: scale(1.1,1.1);
                 } 
-                #tienda-button{
-                    //position: absolute;
-                    display: none;
-                    background-color: #e64b6d;
-                    
-                } 
                 #fb-button{
                     background-color: #1a74eb;
                 }
@@ -100,9 +89,6 @@
     }
 }
                 
-
-            
-
 
 @keyframes subirIconos{
     to{
@@ -124,41 +110,6 @@
 @media(max-width: 1540px){
     #cabecera{
         height: 230px;
-        #menu{
-            #principal{                
-                margin-left: 30%;
-            }
-        }
-    }  
-}
-@media(max-width: 1456px){
-    #cabecera{
-        height: 230px;
-        #menu{
-            #principal{                
-                margin-left: 25%;
-            }
-        }
-    }  
-}
-@media(max-width: 1332px){
-    #cabecera{
-        
-        #menu{
-            #principal{                
-                margin-left: 5%;
-            }
-        }
-    }  
-}
-@media(max-width: 1180px){
-    #cabecera{
-        
-        #menu{
-            #principal{                
-                margin-left: 5%;
-            }
-        }
     }  
 }
 @media(max-width: 1060px){
@@ -209,9 +160,6 @@
     #cabecera{
         #menu{
             height: 80px !important;
-            #principal{
-                display: none;
-            } 
             #social{
                 li{
                     width: 47px;

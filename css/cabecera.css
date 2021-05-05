@@ -22,10 +22,13 @@
   font-weight: bold;
   z-index: 1;
 }
+#cabecera #menu {
+  margin: auto;
+}
 #cabecera #menu #principal {
-  display: block;
+
   float: left;
-  margin-left: 35%;
+  margin-left: 1%;
 }
 #cabecera #menu #principal li {
   display: inline-block;
@@ -47,12 +50,10 @@
   background-color: #083a93;
   transform: scale(1.1);
 }
-#cabecera #menu #principal li:last-child a:hover {
-  background-color: #e64b6d;
-}
 #cabecera #menu #social {
   text-align: center;
   float: right;
+  margin-right: 1%;
 }
 #cabecera #menu #social li {
   width: 60px;
@@ -75,10 +76,6 @@
 #cabecera #menu #social li a:hover {
   transition: all 400ms;
   transform: scale(1.1, 1.1);
-}
-#cabecera #menu #social li #tienda-button {
-  display: none;
-  background-color: #e64b6d;
 }
 #cabecera #menu #social li #fb-button {
   background-color: #1a74eb;
@@ -111,27 +108,6 @@
 @media (max-width: 1540px) {
   #cabecera {
     height: 230px;
-  }
-  #cabecera #menu #principal {
-    margin-left: 30%;
-  }
-}
-@media (max-width: 1456px) {
-  #cabecera {
-    height: 230px;
-  }
-  #cabecera #menu #principal {
-    margin-left: 25%;
-  }
-}
-@media (max-width: 1332px) {
-  #cabecera #menu #principal {
-    margin-left: 5%;
-  }
-}
-@media (max-width: 1180px) {
-  #cabecera #menu #principal {
-    margin-left: 5%;
   }
 }
 @media (max-width: 1060px) {
@@ -174,9 +150,6 @@
 @media (max-width: 380px) {
   #cabecera #menu {
     height: 80px !important;
-  }
-  #cabecera #menu #principal {
-    display: none;
   }
   #cabecera #menu #social li {
     width: 47px;
