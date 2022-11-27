@@ -136,21 +136,3 @@ function scrollSomos() {
     }, 1500);
 
 }
-
-// IG FEED
-
-$(document).ready(()=>{
-    $.instagramFeed({
-            'username': 'megasolutionush',
-            'container': "#instagram-feed-demo",
-            'display_profile':false,
-            'display_biography':false,
-            'display_igtv':false,
-            'display_gallery':true,
-            'styling': false,
-            'items': 12
-
-
-    });
-        
-});

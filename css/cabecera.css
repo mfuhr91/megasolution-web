@@ -1,12 +1,17 @@
 #cabecera {
   display: none;
   background-color: white !important;
-  height: 275px;
+  height: 235px;
 }
+
+#cabecera #logo{
+  padding: 30px;
+}
+
 #cabecera img {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 30%;
+  display: block;
+  margin: auto;
 }
 #cabecera #menu {
   -webkit-user-select: none;
@@ -17,7 +22,7 @@
   /* Standard syntax */
   height: 75px;
   line-height: 62px;
-  background-color: #444;
+  background-color: #1B2223;
   font-size: 25px;
   font-weight: bold;
   z-index: 1;
@@ -41,7 +46,7 @@
   cursor: pointer;
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: #eeeeee;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -71,12 +76,17 @@
   cursor: pointer;
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: #eeeeee;
 }
 #cabecera #menu #social li a:hover {
   transition: all 400ms;
   transform: scale(1.1, 1.1);
 }
+
+#cabecera #menu #social li #shop-button {
+  background-color: #083a93;
+}
+
 #cabecera #menu #social li #fb-button {
   background-color: #1a74eb;
 }
@@ -109,10 +119,18 @@
   #cabecera {
     height: 230px;
   }
+
+  #cabecera img {
+    width: 50%;
+  }
 }
 @media (max-width: 1060px) {
   #cabecera {
-    height: 130px;
+    height: 230px;
+  }
+
+  #cabecera img {
+    width: 60%;
   }
   #cabecera #menu {
     display: flex;
@@ -126,12 +144,7 @@
     margin-top: 8px;
     margin-left: 2.5%;
   }
-  #cabecera #menu #social li #tienda-button {
-    display: block;
-  }
-  #cabecera #menu #social li #up-button {
-    display: block;
-  }
+
   #cabecera #menu #social li a:hover {
     transform: none;
   }
@@ -139,7 +152,7 @@
 @media (max-width: 530px) {
   #cabecera {
     height: 105px;
-    box-shadow: 0px 20px 20px #ccc;
+    box-shadow: 0px 20px 20px #eeeeee;
   }
   #cabecera #menu {
     position: fixed;
@@ -150,6 +163,10 @@
 @media (max-width: 380px) {
   #cabecera #menu {
     height: 80px !important;
+  }
+
+  #cabecera img {
+    width: 80%;
   }
   #cabecera #menu #social li {
     width: 47px;
