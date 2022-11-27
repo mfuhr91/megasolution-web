@@ -159,6 +159,15 @@
     bottom: 0px;
     width: 100%;
   }
+  #cabecera #menu #social li {
+    width: 50px;
+  }
+  #cabecera #menu #social li a {
+    height: 50px;
+    line-height: 45px;
+    border-radius: 13px;
+    font-size: 40px;
+  }
 }
 @media (max-width: 380px) {
   #cabecera #menu {
@@ -174,7 +183,7 @@
   #cabecera #menu #social li a {
     height: 45px;
     line-height: 40px;
-    border-radius: 10px;
-    font-size: 37px;
+    border-radius: 13px;
+    font-size: 40px;
   }
 }
